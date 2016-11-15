@@ -6,16 +6,16 @@
 
 std::string& remove_space(std::string& s){
   int begin = 0;
-  begin = s.find(" ", begin);
+  begin = s.find(' ', 0);
   while(begin != -1){
     s.replace(begin, 1, "");
-    begin = s.find(" ", begin);
+    begin = s.find(' ', begin);
   }
   return s;
 }
 
 int DeCodeHandle(const std::string &pStr, std::string &oStr){
-  unsigned char P28[16];
+  unsigned char P28[17]; // last bit for c style string
   unsigned long int A, B, C, D, P18;
   unsigned long int EAX, EBX, ECX, EDX;
   unsigned char P5C, P64, P6C;
@@ -228,6 +228,7 @@ int DeCodeHandle(const std::string &pStr, std::string &oStr){
   P28[14] = (D>>16) & 0xFF;
   P28[15] = (D>>24) & 0xFF;
 
+  P28[16] = '\0'; // hack for c style string
   const char *resultStr = (const char *)P28;
 /*
   std::cout << std::hex;
