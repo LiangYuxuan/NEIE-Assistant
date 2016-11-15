@@ -9,4 +9,4 @@ We are now finished the function encode and decode by C++.
 The next plan is finish HTTP communicate by Python.
 
 ## Contributing
-We are free to accept to any code. Anyone can fork it and pull request.
+We are free to accept to any code. Everyone can fork it and pull request.
