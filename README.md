@@ -6,6 +6,7 @@ We found a [project](https://github.com/ranulldd/NEIE-Assistant) on github which
 
 ### Process
 We are now working on the function encode and decode by C++.
+
 The next plan is to finish HTTP communicate by Python.
 
 ## Contributing
