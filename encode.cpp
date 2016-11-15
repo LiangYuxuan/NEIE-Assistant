@@ -233,7 +233,7 @@ int EnCode(const std::string& pStr, std::string& oStr){
   std::string input, output;
   for(int i = 0; i < tmp.length(); i += 16){
     if(i != 0){
-      oStr.append("  ");
+      oStr.append(" ");
     }
     input = tmp.substr(i, 16);
     output = "";
@@ -245,10 +245,19 @@ int EnCode(const std::string& pStr, std::string& oStr){
 }
 
 int main(int argc, char const *argv[]) {
-  if(argc == 2){
-    std::string pStr = argv[1], oStr;
-    EnCode(pStr, oStr);
-    std::cout << oStr << std::endl;
+  if(argc >= 2){
+    std::string pStr, oStr;
+    for(int i = 1; i < argc; ++i){
+      pStr = argv[i];
+      oStr = "";
+      EnCode(pStr, oStr); // EnCode returns 0
+      std::cout << oStr << std::endl;
+    }
+  }
+  else{
+    std::cout << "usage: encode [text] ..." << std::endl;
+    std::cout << "Options and arguments:" << std::endl;
+    std::cout << "text ...   : text to encode" << std::endl;
   }
   return 0;
 }

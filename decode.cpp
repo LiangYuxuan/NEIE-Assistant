@@ -246,6 +246,11 @@ int Decode(const std::string& pStr, std::string& oStr){
   std::string tmp = pStr;
   remove_space(tmp);
 
+  // check length
+  if(tmp.length() % 32 != 0){
+    return 1;
+  }
+
   oStr = "";
   std::string input, output;
   for(int i = 0; i < tmp.length(); i += 32){
@@ -259,10 +264,25 @@ int Decode(const std::string& pStr, std::string& oStr){
 }
 
 int main(int argc, char const *argv[]) {
-  if(argc == 2){
-    std::string pStr = argv[1], oStr;
-    Decode(pStr, oStr);
-    std::cout << oStr << std::endl;
+  if(argc >= 2 && strcmp(argv[1], "--help") != 0 && strcmp(argv[1], "-h")){
+    std::string pStr, oStr;
+    for(int i = 1; i < argc; ++i){
+      pStr = argv[i];
+      oStr = "";
+      if(Decode(pStr, oStr) == 0){
+        std::cout << oStr;
+      }
+      else{
+        std::cout << std::endl << "The string \"" << pStr << "\" decode failed." << std::endl;
+      }
+    }
+    std::cout << std::endl;
+  }
+  else{
+    std::cout << "usage: decode [(-h | --help)] [text] ..." << std::endl;
+    std::cout << "Options and arguments:" << std::endl;
+    std::cout << "-h, --help : print this help message and exit" << std::endl;
+    std::cout << "text ...   : text to decode" << std::endl;
   }
   return 0;
 }
