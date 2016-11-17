@@ -1,7 +1,7 @@
 build: encode.so decode.so
 
 executables: encode.cpp decode.cpp public.h
-	mkdir release
+	-mkdir release
 	g++ -o release/encode encode.cpp
 	g++ -o release/decode decode.cpp
 
