@@ -244,6 +244,14 @@ int EnCode(const std::string& pStr, std::string& oStr){
   return 0;
 }
 
+// for python call
+extern "C"
+const char* python(const char input[]) {
+  std::string pStr = input, oStr = "";
+  EnCode(pStr, oStr);
+  return oStr.c_str();
+}
+
 int main(int argc, char const *argv[]) {
   if(argc >= 2){
     std::string pStr, oStr;

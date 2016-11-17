@@ -242,7 +242,7 @@ int DeCodeHandle(const std::string &pStr, std::string &oStr){
   return 0;
 }
 
-int Decode(const std::string& pStr, std::string& oStr){
+int DeCode(const std::string& pStr, std::string& oStr){
   std::string tmp = pStr;
   remove_space(tmp);
 
@@ -263,13 +263,21 @@ int Decode(const std::string& pStr, std::string& oStr){
   return 0;
 }
 
+// for python call
+extern "C"
+const char* python(const char input[]){
+  std::string pStr = input, oStr = "";
+  DeCode(pStr, oStr);
+  return oStr.c_str();
+}
+
 int main(int argc, char const *argv[]) {
   if(argc >= 2 && strcmp(argv[1], "--help") != 0 && strcmp(argv[1], "-h")){
     std::string pStr, oStr;
     for(int i = 1; i < argc; ++i){
       pStr = argv[i];
       oStr = "";
-      if(Decode(pStr, oStr) == 0){
+      if(DeCode(pStr, oStr) == 0){
         std::cout << oStr;
       }
       else{
