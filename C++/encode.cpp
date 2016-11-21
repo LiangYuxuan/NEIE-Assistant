@@ -248,8 +248,11 @@ int EnCode(const std::string& pStr, std::string& oStr){
 extern "C"
 const char* python(const char input[]) {
   std::string pStr = input, oStr = "";
+  char *output;
   EnCode(pStr, oStr);
-  return oStr.c_str();
+  output = (char *)malloc((strlen(oStr.c_str()) + 1) * sizeof(char));
+  strcpy(output, oStr.c_str());
+  return output;
 }
 
 int main(int argc, char const *argv[]) {
