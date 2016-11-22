@@ -11,3 +11,6 @@ The next plan is to finish HTTP communicate by Python.
 
 ## Contributing
 We are free to accept to any code. Everyone can fork it and pull request.
+
+## Copyright
+We use open-source project including [requests](https://github.com/kennethreitz/requests) and [termcolor](https://pypi.python.org/pypi/termcolor).

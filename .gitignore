@@ -31,4 +31,7 @@
 # macOS
 .DS_Store
 
-/C++/release
+# Python
+*.pyc
+
+/library/C++/release
