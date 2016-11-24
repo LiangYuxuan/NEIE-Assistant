@@ -251,20 +251,20 @@ var['password'] = ''
 var['level'] = ''
 
 # optional
-var['end_unit'] = ''
+var['end-unit'] = ''
 
 # with default
-var['no_file'] = False
-var['min_time'] = 60
-var['max_time'] = 120
-var['min_mark'] = 80
-var['max_mark'] = 100
+var['no-file'] = False
+var['min-time'] = 60
+var['max-time'] = 120
+var['min-mark'] = 80
+var['max-mark'] = 100
 
 # Read from command line
 prev = ''
 for i in range(1, len(sys.argv)):
     if sys.argv[i] == '--no-file':
-        var['no_file'] = True
+        var['no-file'] = True
         continue
     elif sys.argv[i][0:2] == '--':
         prev = sys.argv[i][2:]
@@ -276,7 +276,7 @@ for i in range(1, len(sys.argv)):
     else:
         var[prev] = sys.argv[i]
 
-if var['no_file'] == False:
+if var['no-file'] == False:
     config_file = os.getcwd() + '/config.json'
     if os.path.isfile(config_file) == False:
         os.system('touch ' + config_file)
@@ -302,9 +302,6 @@ if var['no_file'] == False:
 if var['path'] == '' or var['username'] == '' or var['password'] == '' or var['level'] == '':
     library.fail('missing required var')
 
-print var
-exit()
-
 # Var init
 learn = learn_english(var['path'], var['username'], var['password'], var['level']);
 
@@ -324,7 +321,7 @@ if status == '1':
 while True:
     learn.GetServerTime()
     library.success('learning english: unit ' + learn.UnitID + ', section ' + learn.SectionID)
-    library.timer(random.randint(var['min_time'], var['max_time']))
+    library.timer(random.randint(var['min-time'], var['max-time']))
     library.success('finished learning: unit ' + learn.UnitID + ', section ' + learn.SectionID)
 
     fetch = library.fetch(learn.level, learn.SectionID)
@@ -332,8 +329,8 @@ while True:
         score = 0
     else:
         # Get int in next two var
-        min_problem = var['min_mark'] * fetch['problem'] / 100 + 1
-        max_problem = var['max_mark'] * fetch['problem'] / 100
+        min_problem = var['min-mark'] * fetch['problem'] / 100 + 1
+        max_problem = var['max-mark'] * fetch['problem'] / 100
         if min_problem > max_problem:
             min_problem = max_problem
         score = random.randint(min_problem, max_problem) * 100.0 / fetch['problem']
@@ -348,7 +345,7 @@ while True:
 
     if fetch['next']['unit'] != learn.UnitID:
         status = update_unit(learn)
-        if learn.UnitID == var['end_unit']:
+        if learn.UnitID == var['end-unit']:
             break
         learn.UnitID = fetch['next']['unit']
     learn.SectionID = fetch['next']['section']
