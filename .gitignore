@@ -34,4 +34,5 @@
 # Python
 *.pyc
 
+config.json
 /library/C++/release

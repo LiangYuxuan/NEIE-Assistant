@@ -1,4 +1,4 @@
-import sys, os, time, random
+import sys, os, time, random, json
 import xml.etree.ElementTree as ET
 
 sys.path.append(os.getcwd() + '/library')
@@ -46,10 +46,14 @@ class learn_english:
 
     def __check_connect(self):
         if self.available == 0:
-            r = requests.get('http://' + self.path + '/WebService/ServiceV3.asmx?WSDL', headers={'Content-Type': 'application/x-www-form-urlencoded'})
-            text = r.text
-            if text.find('LoginListeningResponse') != -1:
-                self.available = 1
+            try:
+                r = requests.get('http://' + self.path + '/WebService/ServiceV3.asmx?WSDL', headers={'Content-Type': 'application/x-www-form-urlencoded'})
+                text = r.text
+                if text.find('LoginListeningResponse') != -1:
+                    self.available = 1
+            except:
+                library.fail('fail to connect server: ' + self.path)
+                exit()
         return
 
     def __sopa_post(self, method, body):
@@ -240,14 +244,66 @@ raw_input()
 '''
 
 var = {}
+# need input
 var['path'] = ''
 var['username'] = ''
 var['password'] = ''
 var['level'] = ''
+
+# optional
+var['end_unit'] = ''
+
+# with default
+var['no_file'] = False
 var['min_time'] = 60
 var['max_time'] = 120
 var['min_mark'] = 80
 var['max_mark'] = 100
+
+# Read from command line
+prev = ''
+for i in range(1, len(sys.argv)):
+    if sys.argv[i] == '--no-file':
+        var['no_file'] = True
+        continue
+    elif sys.argv[i][0:2] == '--':
+        prev = sys.argv[i][2:]
+        continue
+    elif sys.argv[i][0] == '-':
+        table = {'s': 'path', 'u': 'username', 'p': 'password', 'l': 'level'}
+        var[table[sys.argv[i][1]]] = sys.argv[i][2:]
+        continue
+    else:
+        var[prev] = sys.argv[i]
+
+if var['no_file'] == False:
+    config_file = os.getcwd() + '/config.json'
+    if os.path.isfile(config_file) == False:
+        os.system('touch ' + config_file)
+    with open(config_file, 'r+') as f:
+        try:
+            obj = json.load(f)
+        except:
+            obj = {}
+        def sync(var, obj, names):
+            for name in names:
+                try:
+                    obj[name]
+                except:
+                    obj[name] = ''
+                if var[name] == '':
+                    var[name] = obj[name]
+                elif var[name] != obj[name]:
+                    obj[name] = var[name]
+        sync(var, obj, [name for name in var])
+        f.seek(0)
+        json.dump(obj, f)
+
+if var['path'] == '' or var['username'] == '' or var['password'] == '' or var['level'] == '':
+    library.fail('missing required var')
+
+print var
+exit()
 
 # Var init
 learn = learn_english(var['path'], var['username'], var['password'], var['level']);
@@ -287,10 +343,14 @@ while True:
         fetch['next']
     except:
         # end of all section
+        status = update_unit(learn)
         break;
 
     if fetch['next']['unit'] != learn.UnitID:
         status = update_unit(learn)
+        if learn.UnitID == var['end_unit']:
+            break
+        learn.UnitID = fetch['next']['unit']
     learn.SectionID = fetch['next']['section']
 
     status = start_section(learn)

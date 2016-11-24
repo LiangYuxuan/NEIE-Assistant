@@ -10,9 +10,7 @@ We finished the basic function of the software.
 The next plan is to make it easier to use.
 
 ### Usage
-*The project have not finished, and it won't be the way to use it finally.*
-
-Modify the value of var in main.py from line 242 to line 250.
+    python main.py -s<path> -u<username> -p<password> -l<level>
 
 ## Contributing
 We are free to accept to any code. Everyone can fork it and pull request.
