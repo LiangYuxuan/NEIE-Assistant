@@ -301,6 +301,7 @@ if var['no-file'] == False:
 
 if var['path'] == '' or var['username'] == '' or var['password'] == '' or var['level'] == '':
     library.fail('missing required var')
+    exit()
 
 # Var init
 learn = learn_english(var['path'], var['username'], var['password'], var['level']);
