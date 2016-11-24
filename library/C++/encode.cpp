@@ -1,5 +1,8 @@
 #include <iostream>
 #include <string>
+#include <string.h>
+#include <stdio.h>
+#include <malloc.h>
 
 #include "public.h"
 
