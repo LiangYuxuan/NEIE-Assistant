@@ -2,7 +2,10 @@
 #include <string>
 #include <string.h>
 #include <stdio.h>
-#include <malloc.h>
+
+#ifdef __linux__
+  #include <malloc.h>
+#endif
 
 #include "public.h"
 
