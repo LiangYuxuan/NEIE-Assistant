@@ -11,6 +11,7 @@ The next plan is to make it easier to use.
 
 
 ### Usage
+```
 usage: main.py [-h] [-s SERVER] [-u USERNAME] [-p PASSWORD] [-l LEVEL]
                [-nf NO_FILE]
 
@@ -27,6 +28,7 @@ optional arguments:
   -nf NO_FILE, --no-file NO_FILE
                         whether build the config.json to record your
                         information,default is False
+```
 **If you didn't use `-n` & the first time to run ,you information will be recorded in `./config.json` by CLEAR TEXT.After that,you can simply use `python main.py` to run.**
 
 
