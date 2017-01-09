@@ -1,6 +1,8 @@
+#!/usr/bin/python
+#coding=utf-8
 import sys, os, time, random, json
 import xml.etree.ElementTree as ET
-
+import argparse
 sys.path.append(os.getcwd() + '/library')
 import requests, library
 
@@ -260,21 +262,41 @@ var['max-time'] = 120
 var['min-mark'] = 80
 var['max-mark'] = 100
 
+#use argparse to read command line
+parser = argparse.ArgumentParser()
+parser.add_argument('-s','--server',type=str,help='the server ip')
+parser.add_argument('-u','--username',type=str,default=0,help='your student ID')
+parser.add_argument('-p','--password',help='your password')
+parser.add_argument('-l','--level',help='your current level')
+parser.add_argument('-nf','--no-file',default=False,help='whether build the config.json to record your information,default is False')
+args=parser.parse_args()
+
+if len(sys.argv)==1:
+    config_file = os.getcwd() + '/config.json'
+    with open(config_file, 'r+') as f:
+        var=json.load(f)
+    var['no-file']=True #不带参数的时候直接读config.json
+else:
+    var['no-file']=args.file
+    var['path']=args.server
+    var['username']=args.username
+    var['level']=args.level
+    var['password']=args.password
 # Read from command line
-prev = ''
-for i in range(1, len(sys.argv)):
-    if sys.argv[i] == '--no-file':
-        var['no-file'] = True
-        continue
-    elif sys.argv[i][0:2] == '--':
-        prev = sys.argv[i][2:]
-        continue
-    elif sys.argv[i][0] == '-':
-        table = {'s': 'path', 'u': 'username', 'p': 'password', 'l': 'level'}
-        var[table[sys.argv[i][1]]] = sys.argv[i][2:]
-        continue
-    else:
-        var[prev] = sys.argv[i]
+#  prev = ''
+#  for i in range(1, len(sys.argv)):
+    #  if sys.argv[i] == '--no-file':
+        #  var['no-file'] = True
+        #  continue
+    #  elif sys.argv[i][0:2] == '--':
+        #  prev = sys.argv[i][2:]
+        #  continue
+    #  elif sys.argv[i][0] == '-':
+        #  table = {'s': 'path', 'u': 'username', 'p': 'password', 'l': 'level'}
+        #  var[table[sys.argv[i][1]]] = sys.argv[i][2:]
+        #  continue
+    #  else:
+        #  var[prev] = sys.argv[i]
 
 if var['no-file'] == False:
     config_file = os.getcwd() + '/config.json'
