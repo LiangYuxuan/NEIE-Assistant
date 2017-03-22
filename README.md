@@ -29,8 +29,7 @@ optional arguments:
                         whether build the config.json to record your
                         information,default is False
 ```
-**If you didn't use `-n` & the first time to run ,you information will be recorded in `./config.json` by CLEAR TEXT.After that,you can simply use `python main.py` to run.**
-
+**Please note: Your login information will be stored in config.json by CLEAR TEXT if you have no argument '-nf'/'no-file'. Otherwise, if your information have stored in config.json, you can run with no arguments.**
 
 ## Contributing
 We are free to accept to any code. Everyone can fork it and pull request.
