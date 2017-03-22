@@ -1,38 +1,44 @@
 # NEIE-Assistant
 A small, cross-platform program for NEIE.
 
-## Developing
+## Introduction
 We found a [project](https://github.com/ranulldd/NEIE-Assistant) on github which is coded by Visual Basic, but it is hard to run on all platform expect Windows. So we decided to make this program.
-
-### Process
-We finished the basic function of the software.
-
-The next plan is to make it easier to use.
-
 
 ### Usage
 ```
-usage: main.py [-h] [-s SERVER] [-u USERNAME] [-p PASSWORD] [-l LEVEL]
-               [-nf NO_FILE]
+usage: main.py [-h] [-s PATH] [-u USERNAME] [-p PASSWORD] [-l LEVEL] [-nf]
+               [--end-unit END_UNIT] [--min-time MIN_TIME]
+               [--max-time MAX_TIME] [--min-mark MIN_MARK]
+               [--max-mark MAX_MARK]
+
+A small, cross-platform program for NEIE.
 
 optional arguments:
   -h, --help            show this help message and exit
-  -s SERVER, --server SERVER
-                        the server ip
+  -s PATH, --path PATH  path to server, may contain ip and port
   -u USERNAME, --username USERNAME
-                        your student ID
+                        username to login
   -p PASSWORD, --password PASSWORD
-                        your password
+                        password to login
   -l LEVEL, --level LEVEL
-                        your current level
-  -nf NO_FILE, --no-file NO_FILE
-                        whether build the config.json to record your
-                        information,default is False
+                        current level
+  -nf, --no-file        stop read and write information to config.json
+  --end-unit END_UNIT   stop at a unit before all unit learned
+  --min-time MIN_TIME   min time to learn a unit, default 60
+  --max-time MAX_TIME   max time to learn a unit, default 120
+  --min-mark MIN_MARK   min mark to learn a unit, default 80
+  --max-mark MAX_MARK   max mark to learn a unit, default 100
 ```
-**Please note: Your login information will be stored in config.json by CLEAR TEXT if you have no argument '-nf'/'no-file'. Otherwise, if your information have stored in config.json, you can run with no arguments.**
+**Please note: Your login information will be stored in config.json by CLEAR TEXT if you have no argument '-nf'/'--no-file'. Otherwise, if your information have stored in config.json, you can run main.py with no arguments next time.**
+
+## Developing
+### TODO
+* allow user to active NEIE
 
 ## Contributing
 We are free to accept to any code. Everyone can fork it and pull request.
 
 ## Copyright
 We use open-source project including [requests](https://github.com/kennethreitz/requests) and [termcolor](https://pypi.python.org/pypi/termcolor).
+
+NEIE-Assistant is licensed under the GNU General Public License v3.0.

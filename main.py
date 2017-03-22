@@ -1,8 +1,7 @@
 #!/usr/bin/python
 #coding=utf-8
-import sys, os, time, random, json
+import sys, os, time, random, json, argparse
 import xml.etree.ElementTree as ET
-import argparse
 sys.path.append(os.getcwd() + '/library')
 import requests, library
 
@@ -226,7 +225,7 @@ def start_section(learn):
         exit()
     return status
 
-# TOGO function active
+# TODO: function active
 '''
 result = learn.LoginListening()
 status = result['LoginListeningResult']
@@ -246,63 +245,46 @@ raw_input()
 '''
 
 var = {}
-# need input
-var['path'] = ''
-var['username'] = ''
-var['password'] = ''
-var['level'] = ''
-
-# optional
-var['end-unit'] = ''
-
-# with default
-var['no-file'] = False
-var['min-time'] = 60
-var['max-time'] = 120
-var['min-mark'] = 80
-var['max-mark'] = 100
 
 #use argparse to read command line
-parser = argparse.ArgumentParser()
-parser.add_argument('-s','--server',type=str,help='the server ip')
-parser.add_argument('-u','--username',type=str,default=0,help='your student ID')
-parser.add_argument('-p','--password',help='your password')
-parser.add_argument('-l','--level',help='your current level')
-parser.add_argument('-nf','--no-file',default=False,help='whether build the config.json to record your information,default is False')
-args=parser.parse_args()
+parser = argparse.ArgumentParser(description='A small, cross-platform program for NEIE.')
+parser.add_argument('-s', '--path', type=str, help='path to server, may contain ip and port')
+parser.add_argument('-u', '--username', type=str, help='username to login')
+parser.add_argument('-p', '--password', help='password to login')
+parser.add_argument('-l', '--level', help='current level')
 
-if len(sys.argv)==1:
-    config_file = os.getcwd() + '/config.json'
-    with open(config_file, 'r+') as f:
-        var=json.load(f)
-    var['no-file']=True #不带参数的时候直接读config.json
-else:
-    var['no-file']=args.file
-    var['path']=args.server
-    var['username']=args.username
-    var['level']=args.level
-    var['password']=args.password
-# Read from command line
-#  prev = ''
-#  for i in range(1, len(sys.argv)):
-    #  if sys.argv[i] == '--no-file':
-        #  var['no-file'] = True
-        #  continue
-    #  elif sys.argv[i][0:2] == '--':
-        #  prev = sys.argv[i][2:]
-        #  continue
-    #  elif sys.argv[i][0] == '-':
-        #  table = {'s': 'path', 'u': 'username', 'p': 'password', 'l': 'level'}
-        #  var[table[sys.argv[i][1]]] = sys.argv[i][2:]
-        #  continue
-    #  else:
-        #  var[prev] = sys.argv[i]
+parser.add_argument('-nf', '--no-file', help='stop read and write information to config.json', action='store_true')
 
+parser.add_argument('--end-unit', help='stop at a unit before all unit learned')
+
+parser.add_argument('--min-time',type=int, default=60 , help='min time to learn a unit, default 60')
+parser.add_argument('--max-time',type=int, default=120, help='max time to learn a unit, default 120')
+parser.add_argument('--min-mark',type=int, default=80 , help='min mark to learn a unit, default 80')
+parser.add_argument('--max-mark',type=int, default=100, help='max mark to learn a unit, default 100')
+args = parser.parse_args()
+
+var['path'] = args.path
+var['username'] = args.username
+var['password'] = args.password
+var['level'] = args.level
+
+var['no-file'] = args.no_file
+
+var['end-unit'] = args.end_unit
+
+var['min-time'] = args.min_time
+var['max-time'] = args.max_time
+var['min-mark'] = args.min_mark
+var['max-mark'] = args.max_mark
+
+print dir(args)
+print var
+exit()
+
+# sync information with config.json
 if var['no-file'] == False:
     config_file = os.getcwd() + '/config.json'
-    if os.path.isfile(config_file) == False:
-        os.system('touch ' + config_file)
-    with open(config_file, 'r+') as f:
+    with open(config_file, 'w+') as f:
         try:
             obj = json.load(f)
         except:
@@ -312,8 +294,8 @@ if var['no-file'] == False:
                 try:
                     obj[name]
                 except:
-                    obj[name] = ''
-                if var[name] == '':
+                    obj[name] = None
+                if var[name] == None:
                     var[name] = obj[name]
                 elif var[name] != obj[name]:
                     obj[name] = var[name]
@@ -321,7 +303,8 @@ if var['no-file'] == False:
         f.seek(0)
         json.dump(obj, f)
 
-if var['path'] == '' or var['username'] == '' or var['password'] == '' or var['level'] == '':
+# check necessary arguments
+if var['path'] == None or var['username'] == None or var['password'] == None or var['level'] == None:
     library.fail('missing required var')
     exit()
 
