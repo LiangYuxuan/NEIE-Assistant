@@ -277,10 +277,6 @@ var['max-time'] = args.max_time
 var['min-mark'] = args.min_mark
 var['max-mark'] = args.max_mark
 
-print dir(args)
-print var
-exit()
-
 # sync information with config.json
 if var['no-file'] == False:
     config_file = os.getcwd() + '/config.json'
