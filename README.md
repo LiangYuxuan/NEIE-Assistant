@@ -6,8 +6,8 @@ We found a [project](https://github.com/ranulldd/NEIE-Assistant) on github which
 
 ### Usage
 ```
-usage: main.py [-h] [-s PATH] [-u USERNAME] [-p PASSWORD] [-l LEVEL] [-nf]
-               [--end-unit END_UNIT] [--min-time MIN_TIME]
+usage: main.py [-h] [-s PATH] [-u USERNAME] [-p PASSWORD] [-l LEVEL] [-ac]
+               [-nf] [--end-unit END_UNIT] [--min-time MIN_TIME]
                [--max-time MAX_TIME] [--min-mark MIN_MARK]
                [--max-mark MAX_MARK]
 
@@ -22,6 +22,7 @@ optional arguments:
                         password to login
   -l LEVEL, --level LEVEL
                         current level
+  -ac, --activation     try to active user first
   -nf, --no-file        stop read and write information to config.json
   --end-unit END_UNIT   stop at a unit before all unit learned
   --min-time MIN_TIME   min time to learn a unit, default 60
@@ -30,10 +31,6 @@ optional arguments:
   --max-mark MAX_MARK   max mark to learn a unit, default 100
 ```
 **Please note: Your login information will be stored in config.json by CLEAR TEXT if you have no argument '-nf'/'--no-file'. Otherwise, if your information have stored in config.json, you can run main.py with no arguments next time.**
-
-## Developing
-### TODO
-* allow user to active NEIE
 
 ## Contributing
 We are free to accept to any code. Everyone can fork it and pull request.

@@ -168,6 +168,26 @@ class learn_english:
         result['ReturnMessage'] = result['ReturnMessage'].decode('gbk')
         return result
 
+def active(learn, SerialNumber, LicenseNumber, ActivationCode):
+    result = learn.LoginListening()
+    status = result['LoginListeningResult']
+    if status == '2':
+        library.warning('user ' + learn.username + ' have been actived')
+        return '1'
+    elif status != '1':
+        if result['ReturnMessage'].find('Activation') == -1:
+            library.fail('user ' + learn.username + ' login failed: ' + result['ReturnMessage'])
+            exit()
+
+    result = learn.SetListeningUserActiveInfo(SerialNumber, LicenseNumber, ActivationCode)
+    status = result['SetListeningUserActiveInfoResult']
+    if status == '1':
+        library.success('user ' + learn.username + ' active successfully')
+    else:
+        library.fail('user ' + learn.username + ' active failed: ' + result['ReturnMessage'])
+        exit()
+    return status
+
 def login(learn):
     result = learn.LoginListening()
     status = result['LoginListeningResult']
@@ -225,33 +245,16 @@ def start_section(learn):
         exit()
     return status
 
-# TODO: function active
-'''
-result = learn.LoginListening()
-status = result['LoginListeningResult']
-if status == '0':
-    result = learn.SetListeningUserActiveInfo('aaa', 'bbb', 'ccc')
-    if result['SetListeningUserActiveInfoResult'] != 1:
-        library.fail('user ' + learn.username + ' activation failed: ' + result['ReturnMessage'])
-        exit()
-    else:
-        library.success('user ' + learn.username + ' activation successfully')
-elif status != '2':
-    library.fail('user ' + learn.username + ' login failed: ' + result['ReturnMessage'])
-    exit()
-
-# as if need learn english
-raw_input()
-'''
-
 var = {}
 
 #use argparse to read command line
 parser = argparse.ArgumentParser(description='A small, cross-platform program for NEIE.')
 parser.add_argument('-s', '--path', type=str, help='path to server, may contain ip and port')
 parser.add_argument('-u', '--username', type=str, help='username to login')
-parser.add_argument('-p', '--password', help='password to login')
-parser.add_argument('-l', '--level', help='current level')
+parser.add_argument('-p', '--password', type=str, help='password to login')
+parser.add_argument('-l', '--level', type=str, help='current level')
+
+parser.add_argument('-ac', '--activation', help='try to active user first', action='store_true')
 
 parser.add_argument('-nf', '--no-file', help='stop read and write information to config.json', action='store_true')
 
@@ -268,8 +271,6 @@ var['username'] = args.username
 var['password'] = args.password
 var['level'] = args.level
 
-var['no-file'] = args.no_file
-
 var['end-unit'] = args.end_unit
 
 var['min-time'] = args.min_time
@@ -278,7 +279,7 @@ var['min-mark'] = args.min_mark
 var['max-mark'] = args.max_mark
 
 # sync information with config.json
-if var['no-file'] == False:
+if args.no_file == False:
     config_file = os.getcwd() + '/config.json'
     if os.path.isfile(config_file) == False:
         with open(config_file, 'w+') as f:
@@ -310,8 +311,33 @@ if var['path'] == None or var['username'] == None or var['password'] == None or 
 # Var init
 learn = learn_english(var['path'], var['username'], var['password'], var['level']);
 
+# Activation
+if args.activation == True:
+    print 'Get Activation Code at http://www.neie.edu.cn/License/LicenseActivation.aspx'
+    SerialNumber = raw_input('Serial Number: ')
+    LicenseNumber = raw_input('License Number: ')
+    ActivationCode = raw_input('Activation Code: ')
+
+    print 'Confirm your information'
+    print 'Path: ' + var['path']
+    print 'Username: ' + var['username']
+    print 'Level: ' + var['level']
+    print 'Serial Number: ' + SerialNumber
+    print 'License Number: ' + LicenseNumber
+    print 'Activation Code: ' + ActivationCode
+
+    answer = raw_input('Is above information all right? (y/n)')
+    if answer == 'Y' or answer == 'y':
+        SerialNumber = SerialNumber.replace(' ', '').replace('-', '')
+        LicenseNumber = LicenseNumber.replace(' ', '').replace('-', '')
+        ActivationCode = ActivationCode.replace(' ', '').replace('-', '')
+        active(learn, SerialNumber, LicenseNumber, ActivationCode)
+    else:
+        exit()
+
 # Login
-status = login(learn)
+if args.activation == False:
+    status = login(learn)
 
 # Get Progress
 status = get_progress(learn)
