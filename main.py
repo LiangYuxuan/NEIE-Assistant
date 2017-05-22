@@ -280,7 +280,10 @@ var['max-mark'] = args.max_mark
 # sync information with config.json
 if var['no-file'] == False:
     config_file = os.getcwd() + '/config.json'
-    with open(config_file, 'w+') as f:
+    if os.path.isfile(config_file) == False:
+        with open(config_file, 'w+') as f:
+            pass
+    with open(config_file, 'r+') as f:
         try:
             obj = json.load(f)
         except:
