@@ -4,6 +4,22 @@ A small, cross-platform program for NEIE.
 ## Introduction
 We found a [project](https://github.com/ranulldd/NEIE-Assistant) on github which is coded by Visual Basic, but it is hard to run on all platform expect Windows. So we decided to make this program.
 
+## Quick Start
+```
+git clone https://github.com/LiangYuxuan/NEIE-Assistant.git
+cd NEIE-Assistant
+
+# if you have activated your user
+python main.py -s example.com:1234 -u username -p password -l 4
+
+# if you need to activate first
+python main.py -ac -s example.com:1234 -u username -p password -l 4
+```
+
+Change `example.com:1234` `username` `password` `4` to your real configs. For level, `1 2 3 4` are represented for `A B C D`.
+
+For next run, you just need to run `python main.py`.
+
 ### Usage
 ```
 usage: main.py [-h] [-s PATH] [-u USERNAME] [-p PASSWORD] [-l LEVEL] [-ac]
@@ -22,7 +38,7 @@ optional arguments:
                         password to login
   -l LEVEL, --level LEVEL
                         current level
-  -ac, --activation     try to active user first
+  -ac, --activation     try to activate user first
   -nf, --no-file        stop read and write information to config.json
   --end-unit END_UNIT   stop at a unit before all unit learned
   --min-time MIN_TIME   min time to learn a unit, default 60
