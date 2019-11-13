@@ -1,0 +1,1622 @@
+[
+  {
+    "unit": "1",
+    "section": "1111",
+    "problem": 0
+  },
+  {
+    "unit": "1",
+    "section": "1112",
+    "problem": 0
+  },
+  {
+    "unit": "1",
+    "section": "1113",
+    "problem": 2
+  },
+  {
+    "unit": "1",
+    "section": "1114",
+    "problem": 0
+  },
+  {
+    "unit": "1",
+    "section": "1115",
+    "problem": 0
+  },
+  {
+    "unit": "1",
+    "section": "1116",
+    "problem": 0
+  },
+  {
+    "unit": "1",
+    "section": "1117",
+    "problem": 0
+  },
+  {
+    "unit": "1",
+    "section": "1118",
+    "problem": 6
+  },
+  {
+    "unit": "1",
+    "section": "1119",
+    "problem": 0
+  },
+  {
+    "unit": "1",
+    "section": "111A",
+    "problem": 0
+  },
+  {
+    "unit": "1",
+    "section": "111B",
+    "problem": 3
+  },
+  {
+    "unit": "1",
+    "section": "111C",
+    "problem": 0
+  },
+  {
+    "unit": "1",
+    "section": "1101",
+    "problem": 5
+  },
+  {
+    "unit": "1",
+    "section": "1106",
+    "problem": 10
+  },
+  {
+    "unit": "1",
+    "section": "1102",
+    "problem": 5
+  },
+  {
+    "unit": "1",
+    "section": "1107",
+    "problem": 5
+  },
+  {
+    "unit": "1",
+    "section": "1103",
+    "problem": 5
+  },
+  {
+    "unit": "1",
+    "section": "1104",
+    "problem": 5
+  },
+  {
+    "unit": "1",
+    "section": "1105",
+    "problem": 6
+  },
+  {
+    "unit": "2",
+    "section": "1211",
+    "problem": 0
+  },
+  {
+    "unit": "2",
+    "section": "1212",
+    "problem": 0
+  },
+  {
+    "unit": "2",
+    "section": "1213",
+    "problem": 2
+  },
+  {
+    "unit": "2",
+    "section": "1214",
+    "problem": 0
+  },
+  {
+    "unit": "2",
+    "section": "1215",
+    "problem": 0
+  },
+  {
+    "unit": "2",
+    "section": "1216",
+    "problem": 0
+  },
+  {
+    "unit": "2",
+    "section": "1217",
+    "problem": 0
+  },
+  {
+    "unit": "2",
+    "section": "1218",
+    "problem": 6
+  },
+  {
+    "unit": "2",
+    "section": "1219",
+    "problem": 0
+  },
+  {
+    "unit": "2",
+    "section": "121A",
+    "problem": 0
+  },
+  {
+    "unit": "2",
+    "section": "121B",
+    "problem": 3
+  },
+  {
+    "unit": "2",
+    "section": "121C",
+    "problem": 0
+  },
+  {
+    "unit": "2",
+    "section": "1201",
+    "problem": 5
+  },
+  {
+    "unit": "2",
+    "section": "1206",
+    "problem": 10
+  },
+  {
+    "unit": "2",
+    "section": "1202",
+    "problem": 5
+  },
+  {
+    "unit": "2",
+    "section": "1207",
+    "problem": 5
+  },
+  {
+    "unit": "2",
+    "section": "1203",
+    "problem": 5
+  },
+  {
+    "unit": "2",
+    "section": "1204",
+    "problem": 5
+  },
+  {
+    "unit": "2",
+    "section": "1205",
+    "problem": 6
+  },
+  {
+    "unit": "3",
+    "section": "1311",
+    "problem": 0
+  },
+  {
+    "unit": "3",
+    "section": "1312",
+    "problem": 0
+  },
+  {
+    "unit": "3",
+    "section": "1313",
+    "problem": 2
+  },
+  {
+    "unit": "3",
+    "section": "1314",
+    "problem": 0
+  },
+  {
+    "unit": "3",
+    "section": "1315",
+    "problem": 0
+  },
+  {
+    "unit": "3",
+    "section": "1316",
+    "problem": 0
+  },
+  {
+    "unit": "3",
+    "section": "1317",
+    "problem": 0
+  },
+  {
+    "unit": "3",
+    "section": "1318",
+    "problem": 6
+  },
+  {
+    "unit": "3",
+    "section": "1319",
+    "problem": 0
+  },
+  {
+    "unit": "3",
+    "section": "131A",
+    "problem": 0
+  },
+  {
+    "unit": "3",
+    "section": "131B",
+    "problem": 3
+  },
+  {
+    "unit": "3",
+    "section": "131C",
+    "problem": 0
+  },
+  {
+    "unit": "3",
+    "section": "1301",
+    "problem": 5
+  },
+  {
+    "unit": "3",
+    "section": "1306",
+    "problem": 11
+  },
+  {
+    "unit": "3",
+    "section": "1302",
+    "problem": 5
+  },
+  {
+    "unit": "3",
+    "section": "1307",
+    "problem": 5
+  },
+  {
+    "unit": "3",
+    "section": "1303",
+    "problem": 5
+  },
+  {
+    "unit": "3",
+    "section": "1304",
+    "problem": 5
+  },
+  {
+    "unit": "3",
+    "section": "1305",
+    "problem": 6
+  },
+  {
+    "unit": "4",
+    "section": "1411",
+    "problem": 0
+  },
+  {
+    "unit": "4",
+    "section": "1412",
+    "problem": 0
+  },
+  {
+    "unit": "4",
+    "section": "1413",
+    "problem": 2
+  },
+  {
+    "unit": "4",
+    "section": "1414",
+    "problem": 0
+  },
+  {
+    "unit": "4",
+    "section": "1415",
+    "problem": 0
+  },
+  {
+    "unit": "4",
+    "section": "1416",
+    "problem": 0
+  },
+  {
+    "unit": "4",
+    "section": "1417",
+    "problem": 0
+  },
+  {
+    "unit": "4",
+    "section": "1418",
+    "problem": 6
+  },
+  {
+    "unit": "4",
+    "section": "1419",
+    "problem": 0
+  },
+  {
+    "unit": "4",
+    "section": "141A",
+    "problem": 0
+  },
+  {
+    "unit": "4",
+    "section": "141B",
+    "problem": 3
+  },
+  {
+    "unit": "4",
+    "section": "141C",
+    "problem": 0
+  },
+  {
+    "unit": "4",
+    "section": "1401",
+    "problem": 5
+  },
+  {
+    "unit": "4",
+    "section": "1406",
+    "problem": 10
+  },
+  {
+    "unit": "4",
+    "section": "1402",
+    "problem": 5
+  },
+  {
+    "unit": "4",
+    "section": "1407",
+    "problem": 6
+  },
+  {
+    "unit": "4",
+    "section": "1403",
+    "problem": 5
+  },
+  {
+    "unit": "4",
+    "section": "1404",
+    "problem": 5
+  },
+  {
+    "unit": "4",
+    "section": "1405",
+    "problem": 6
+  },
+  {
+    "unit": "5",
+    "section": "1511",
+    "problem": 0
+  },
+  {
+    "unit": "5",
+    "section": "1512",
+    "problem": 0
+  },
+  {
+    "unit": "5",
+    "section": "1513",
+    "problem": 2
+  },
+  {
+    "unit": "5",
+    "section": "1514",
+    "problem": 0
+  },
+  {
+    "unit": "5",
+    "section": "1515",
+    "problem": 0
+  },
+  {
+    "unit": "5",
+    "section": "1516",
+    "problem": 0
+  },
+  {
+    "unit": "5",
+    "section": "1517",
+    "problem": 0
+  },
+  {
+    "unit": "5",
+    "section": "1518",
+    "problem": 6
+  },
+  {
+    "unit": "5",
+    "section": "1519",
+    "problem": 0
+  },
+  {
+    "unit": "5",
+    "section": "151A",
+    "problem": 0
+  },
+  {
+    "unit": "5",
+    "section": "151B",
+    "problem": 3
+  },
+  {
+    "unit": "5",
+    "section": "151C",
+    "problem": 0
+  },
+  {
+    "unit": "5",
+    "section": "1501",
+    "problem": 6
+  },
+  {
+    "unit": "5",
+    "section": "1506",
+    "problem": 12
+  },
+  {
+    "unit": "5",
+    "section": "1502",
+    "problem": 5
+  },
+  {
+    "unit": "5",
+    "section": "1507",
+    "problem": 4
+  },
+  {
+    "unit": "5",
+    "section": "1503",
+    "problem": 6
+  },
+  {
+    "unit": "5",
+    "section": "1508",
+    "problem": 9
+  },
+  {
+    "unit": "5",
+    "section": "1504",
+    "problem": 5
+  },
+  {
+    "unit": "5",
+    "section": "1505",
+    "problem": 5
+  },
+  {
+    "unit": "F",
+    "section": "1F11",
+    "problem": 30
+  },
+  {
+    "unit": "F",
+    "section": "1F12",
+    "problem": 4
+  },
+  {
+    "unit": "F",
+    "section": "1F13",
+    "problem": 7
+  },
+  {
+    "unit": "F",
+    "section": "1F14",
+    "problem": 4
+  },
+  {
+    "unit": "F",
+    "section": "1F21",
+    "problem": 12
+  },
+  {
+    "unit": "F",
+    "section": "1F22",
+    "problem": 8
+  },
+  {
+    "unit": "F",
+    "section": "1F23",
+    "problem": 5
+  },
+  {
+    "unit": "F",
+    "section": "1F31",
+    "problem": 6
+  },
+  {
+    "unit": "F",
+    "section": "1F32",
+    "problem": 5
+  },
+  {
+    "unit": "F",
+    "section": "1F33",
+    "problem": 3
+  },
+  {
+    "unit": "F",
+    "section": "1F34",
+    "problem": 3
+  },
+  {
+    "unit": "F",
+    "section": "1F41",
+    "problem": 4
+  },
+  {
+    "unit": "F",
+    "section": "1F42",
+    "problem": 2
+  },
+  {
+    "unit": "F",
+    "section": "1F43",
+    "problem": 3
+  },
+  {
+    "unit": "F",
+    "section": "1F44",
+    "problem": 2
+  },
+  {
+    "unit": "F",
+    "section": "1F51",
+    "problem": 2
+  },
+  {
+    "unit": "F",
+    "section": "1F52",
+    "problem": 4
+  },
+  {
+    "unit": "F",
+    "section": "1F53",
+    "problem": 5
+  },
+  {
+    "unit": "6",
+    "section": "1611",
+    "problem": 0
+  },
+  {
+    "unit": "6",
+    "section": "1612",
+    "problem": 0
+  },
+  {
+    "unit": "6",
+    "section": "1613",
+    "problem": 2
+  },
+  {
+    "unit": "6",
+    "section": "1614",
+    "problem": 0
+  },
+  {
+    "unit": "6",
+    "section": "1615",
+    "problem": 0
+  },
+  {
+    "unit": "6",
+    "section": "1616",
+    "problem": 0
+  },
+  {
+    "unit": "6",
+    "section": "1617",
+    "problem": 0
+  },
+  {
+    "unit": "6",
+    "section": "1618",
+    "problem": 6
+  },
+  {
+    "unit": "6",
+    "section": "1619",
+    "problem": 0
+  },
+  {
+    "unit": "6",
+    "section": "161A",
+    "problem": 0
+  },
+  {
+    "unit": "6",
+    "section": "161B",
+    "problem": 3
+  },
+  {
+    "unit": "6",
+    "section": "161C",
+    "problem": 0
+  },
+  {
+    "unit": "6",
+    "section": "1601",
+    "problem": 5
+  },
+  {
+    "unit": "6",
+    "section": "1606",
+    "problem": 10
+  },
+  {
+    "unit": "6",
+    "section": "1602",
+    "problem": 5
+  },
+  {
+    "unit": "6",
+    "section": "1607",
+    "problem": 5
+  },
+  {
+    "unit": "6",
+    "section": "1603",
+    "problem": 5
+  },
+  {
+    "unit": "6",
+    "section": "1604",
+    "problem": 5
+  },
+  {
+    "unit": "6",
+    "section": "1605",
+    "problem": 6
+  },
+  {
+    "unit": "7",
+    "section": "1711",
+    "problem": 0
+  },
+  {
+    "unit": "7",
+    "section": "1712",
+    "problem": 0
+  },
+  {
+    "unit": "7",
+    "section": "1713",
+    "problem": 2
+  },
+  {
+    "unit": "7",
+    "section": "1714",
+    "problem": 0
+  },
+  {
+    "unit": "7",
+    "section": "1715",
+    "problem": 0
+  },
+  {
+    "unit": "7",
+    "section": "1716",
+    "problem": 0
+  },
+  {
+    "unit": "7",
+    "section": "1717",
+    "problem": 0
+  },
+  {
+    "unit": "7",
+    "section": "1718",
+    "problem": 6
+  },
+  {
+    "unit": "7",
+    "section": "1719",
+    "problem": 0
+  },
+  {
+    "unit": "7",
+    "section": "171A",
+    "problem": 0
+  },
+  {
+    "unit": "7",
+    "section": "171B",
+    "problem": 3
+  },
+  {
+    "unit": "7",
+    "section": "171C",
+    "problem": 0
+  },
+  {
+    "unit": "7",
+    "section": "1701",
+    "problem": 4
+  },
+  {
+    "unit": "7",
+    "section": "1706",
+    "problem": 10
+  },
+  {
+    "unit": "7",
+    "section": "1702",
+    "problem": 5
+  },
+  {
+    "unit": "7",
+    "section": "1707",
+    "problem": 4
+  },
+  {
+    "unit": "7",
+    "section": "1703",
+    "problem": 7
+  },
+  {
+    "unit": "7",
+    "section": "1704",
+    "problem": 3
+  },
+  {
+    "unit": "7",
+    "section": "1705",
+    "problem": 5
+  },
+  {
+    "unit": "8",
+    "section": "1811",
+    "problem": 0
+  },
+  {
+    "unit": "8",
+    "section": "1812",
+    "problem": 0
+  },
+  {
+    "unit": "8",
+    "section": "1813",
+    "problem": 2
+  },
+  {
+    "unit": "8",
+    "section": "1814",
+    "problem": 0
+  },
+  {
+    "unit": "8",
+    "section": "1815",
+    "problem": 0
+  },
+  {
+    "unit": "8",
+    "section": "1816",
+    "problem": 0
+  },
+  {
+    "unit": "8",
+    "section": "1817",
+    "problem": 0
+  },
+  {
+    "unit": "8",
+    "section": "1818",
+    "problem": 7
+  },
+  {
+    "unit": "8",
+    "section": "1819",
+    "problem": 0
+  },
+  {
+    "unit": "8",
+    "section": "181A",
+    "problem": 0
+  },
+  {
+    "unit": "8",
+    "section": "181B",
+    "problem": 3
+  },
+  {
+    "unit": "8",
+    "section": "181C",
+    "problem": 0
+  },
+  {
+    "unit": "8",
+    "section": "1801",
+    "problem": 5
+  },
+  {
+    "unit": "8",
+    "section": "1806",
+    "problem": 10
+  },
+  {
+    "unit": "8",
+    "section": "1802",
+    "problem": 5
+  },
+  {
+    "unit": "8",
+    "section": "1807",
+    "problem": 5
+  },
+  {
+    "unit": "8",
+    "section": "1803",
+    "problem": 5
+  },
+  {
+    "unit": "8",
+    "section": "1804",
+    "problem": 5
+  },
+  {
+    "unit": "8",
+    "section": "1805",
+    "problem": 5
+  },
+  {
+    "unit": "9",
+    "section": "1911",
+    "problem": 0
+  },
+  {
+    "unit": "9",
+    "section": "1912",
+    "problem": 0
+  },
+  {
+    "unit": "9",
+    "section": "1913",
+    "problem": 2
+  },
+  {
+    "unit": "9",
+    "section": "1914",
+    "problem": 0
+  },
+  {
+    "unit": "9",
+    "section": "1915",
+    "problem": 0
+  },
+  {
+    "unit": "9",
+    "section": "1916",
+    "problem": 0
+  },
+  {
+    "unit": "9",
+    "section": "1917",
+    "problem": 0
+  },
+  {
+    "unit": "9",
+    "section": "1918",
+    "problem": 6
+  },
+  {
+    "unit": "9",
+    "section": "1919",
+    "problem": 0
+  },
+  {
+    "unit": "9",
+    "section": "191A",
+    "problem": 0
+  },
+  {
+    "unit": "9",
+    "section": "191B",
+    "problem": 3
+  },
+  {
+    "unit": "9",
+    "section": "191C",
+    "problem": 0
+  },
+  {
+    "unit": "9",
+    "section": "1901",
+    "problem": 4
+  },
+  {
+    "unit": "9",
+    "section": "1906",
+    "problem": 10
+  },
+  {
+    "unit": "9",
+    "section": "1902",
+    "problem": 5
+  },
+  {
+    "unit": "9",
+    "section": "1907",
+    "problem": 4
+  },
+  {
+    "unit": "9",
+    "section": "1903",
+    "problem": 8
+  },
+  {
+    "unit": "9",
+    "section": "1904",
+    "problem": 4
+  },
+  {
+    "unit": "9",
+    "section": "1905",
+    "problem": 5
+  },
+  {
+    "unit": "G",
+    "section": "1G11",
+    "problem": 10
+  },
+  {
+    "unit": "G",
+    "section": "1G12",
+    "problem": 28
+  },
+  {
+    "unit": "G",
+    "section": "1G13",
+    "problem": 3
+  },
+  {
+    "unit": "G",
+    "section": "1G14",
+    "problem": 6
+  },
+  {
+    "unit": "G",
+    "section": "1G21",
+    "problem": 10
+  },
+  {
+    "unit": "G",
+    "section": "1G22",
+    "problem": 9
+  },
+  {
+    "unit": "G",
+    "section": "1G31",
+    "problem": 8
+  },
+  {
+    "unit": "G",
+    "section": "1G32",
+    "problem": 5
+  },
+  {
+    "unit": "G",
+    "section": "1G33",
+    "problem": 3
+  },
+  {
+    "unit": "G",
+    "section": "1G34",
+    "problem": 4
+  },
+  {
+    "unit": "G",
+    "section": "1G35",
+    "problem": 5
+  },
+  {
+    "unit": "G",
+    "section": "1G41",
+    "problem": 3
+  },
+  {
+    "unit": "G",
+    "section": "1G42",
+    "problem": 5
+  },
+  {
+    "unit": "G",
+    "section": "1G43",
+    "problem": 3
+  },
+  {
+    "unit": "G",
+    "section": "1G44",
+    "problem": 3
+  },
+  {
+    "unit": "G",
+    "section": "1G51",
+    "problem": 2
+  },
+  {
+    "unit": "G",
+    "section": "1G52",
+    "problem": 4
+  },
+  {
+    "unit": "G",
+    "section": "1G53",
+    "problem": 4
+  },
+  {
+    "unit": "A",
+    "section": "1A11",
+    "problem": 0
+  },
+  {
+    "unit": "A",
+    "section": "1A12",
+    "problem": 0
+  },
+  {
+    "unit": "A",
+    "section": "1A13",
+    "problem": 2
+  },
+  {
+    "unit": "A",
+    "section": "1A14",
+    "problem": 0
+  },
+  {
+    "unit": "A",
+    "section": "1A15",
+    "problem": 0
+  },
+  {
+    "unit": "A",
+    "section": "1A16",
+    "problem": 0
+  },
+  {
+    "unit": "A",
+    "section": "1A17",
+    "problem": 0
+  },
+  {
+    "unit": "A",
+    "section": "1A18",
+    "problem": 6
+  },
+  {
+    "unit": "A",
+    "section": "1A19",
+    "problem": 0
+  },
+  {
+    "unit": "A",
+    "section": "1A1A",
+    "problem": 0
+  },
+  {
+    "unit": "A",
+    "section": "1A1B",
+    "problem": 3
+  },
+  {
+    "unit": "A",
+    "section": "1A1C",
+    "problem": 0
+  },
+  {
+    "unit": "A",
+    "section": "1A01",
+    "problem": 5
+  },
+  {
+    "unit": "A",
+    "section": "1A06",
+    "problem": 10
+  },
+  {
+    "unit": "A",
+    "section": "1A02",
+    "problem": 5
+  },
+  {
+    "unit": "A",
+    "section": "1A07",
+    "problem": 4
+  },
+  {
+    "unit": "A",
+    "section": "1A03",
+    "problem": 5
+  },
+  {
+    "unit": "A",
+    "section": "1A04",
+    "problem": 5
+  },
+  {
+    "unit": "A",
+    "section": "1A05",
+    "problem": 5
+  },
+  {
+    "unit": "B",
+    "section": "1B11",
+    "problem": 0
+  },
+  {
+    "unit": "B",
+    "section": "1B12",
+    "problem": 0
+  },
+  {
+    "unit": "B",
+    "section": "1B13",
+    "problem": 2
+  },
+  {
+    "unit": "B",
+    "section": "1B14",
+    "problem": 0
+  },
+  {
+    "unit": "B",
+    "section": "1B15",
+    "problem": 0
+  },
+  {
+    "unit": "B",
+    "section": "1B16",
+    "problem": 0
+  },
+  {
+    "unit": "B",
+    "section": "1B17",
+    "problem": 0
+  },
+  {
+    "unit": "B",
+    "section": "1B18",
+    "problem": 6
+  },
+  {
+    "unit": "B",
+    "section": "1B19",
+    "problem": 0
+  },
+  {
+    "unit": "B",
+    "section": "1B1A",
+    "problem": 0
+  },
+  {
+    "unit": "B",
+    "section": "1B1B",
+    "problem": 3
+  },
+  {
+    "unit": "B",
+    "section": "1B1C",
+    "problem": 0
+  },
+  {
+    "unit": "B",
+    "section": "1B01",
+    "problem": 5
+  },
+  {
+    "unit": "B",
+    "section": "1B06",
+    "problem": 10
+  },
+  {
+    "unit": "B",
+    "section": "1B02",
+    "problem": 5
+  },
+  {
+    "unit": "B",
+    "section": "1B07",
+    "problem": 4
+  },
+  {
+    "unit": "B",
+    "section": "1B03",
+    "problem": 10
+  },
+  {
+    "unit": "B",
+    "section": "1B04",
+    "problem": 4
+  },
+  {
+    "unit": "B",
+    "section": "1B05",
+    "problem": 5
+  },
+  {
+    "unit": "C",
+    "section": "1C11",
+    "problem": 0
+  },
+  {
+    "unit": "C",
+    "section": "1C12",
+    "problem": 0
+  },
+  {
+    "unit": "C",
+    "section": "1C13",
+    "problem": 2
+  },
+  {
+    "unit": "C",
+    "section": "1C14",
+    "problem": 0
+  },
+  {
+    "unit": "C",
+    "section": "1C15",
+    "problem": 0
+  },
+  {
+    "unit": "C",
+    "section": "1C16",
+    "problem": 0
+  },
+  {
+    "unit": "C",
+    "section": "1C17",
+    "problem": 0
+  },
+  {
+    "unit": "C",
+    "section": "1C18",
+    "problem": 7
+  },
+  {
+    "unit": "C",
+    "section": "1C19",
+    "problem": 0
+  },
+  {
+    "unit": "C",
+    "section": "1C1A",
+    "problem": 0
+  },
+  {
+    "unit": "C",
+    "section": "1C1B",
+    "problem": 3
+  },
+  {
+    "unit": "C",
+    "section": "1C1C",
+    "problem": 0
+  },
+  {
+    "unit": "C",
+    "section": "1C01",
+    "problem": 5
+  },
+  {
+    "unit": "C",
+    "section": "1C06",
+    "problem": 10
+  },
+  {
+    "unit": "C",
+    "section": "1C02",
+    "problem": 5
+  },
+  {
+    "unit": "C",
+    "section": "1C07",
+    "problem": 5
+  },
+  {
+    "unit": "C",
+    "section": "1C03",
+    "problem": 5
+  },
+  {
+    "unit": "C",
+    "section": "1C04",
+    "problem": 4
+  },
+  {
+    "unit": "C",
+    "section": "1C05",
+    "problem": 6
+  },
+  {
+    "unit": "D",
+    "section": "1D11",
+    "problem": 0
+  },
+  {
+    "unit": "D",
+    "section": "1D12",
+    "problem": 0
+  },
+  {
+    "unit": "D",
+    "section": "1D13",
+    "problem": 2
+  },
+  {
+    "unit": "D",
+    "section": "1D14",
+    "problem": 0
+  },
+  {
+    "unit": "D",
+    "section": "1D15",
+    "problem": 0
+  },
+  {
+    "unit": "D",
+    "section": "1D16",
+    "problem": 0
+  },
+  {
+    "unit": "D",
+    "section": "1D17",
+    "problem": 0
+  },
+  {
+    "unit": "D",
+    "section": "1D18",
+    "problem": 7
+  },
+  {
+    "unit": "D",
+    "section": "1D19",
+    "problem": 0
+  },
+  {
+    "unit": "D",
+    "section": "1D1A",
+    "problem": 0
+  },
+  {
+    "unit": "D",
+    "section": "1D1B",
+    "problem": 3
+  },
+  {
+    "unit": "D",
+    "section": "1D1C",
+    "problem": 0
+  },
+  {
+    "unit": "D",
+    "section": "1D01",
+    "problem": 5
+  },
+  {
+    "unit": "D",
+    "section": "1D06",
+    "problem": 10
+  },
+  {
+    "unit": "D",
+    "section": "1D02",
+    "problem": 5
+  },
+  {
+    "unit": "D",
+    "section": "1D07",
+    "problem": 4
+  },
+  {
+    "unit": "D",
+    "section": "1D03",
+    "problem": 6
+  },
+  {
+    "unit": "D",
+    "section": "1D04",
+    "problem": 4
+  },
+  {
+    "unit": "D",
+    "section": "1D05",
+    "problem": 5
+  },
+  {
+    "unit": "H",
+    "section": "1H11",
+    "problem": 4
+  },
+  {
+    "unit": "H",
+    "section": "1H12",
+    "problem": 12
+  },
+  {
+    "unit": "H",
+    "section": "1H13",
+    "problem": 5
+  },
+  {
+    "unit": "H",
+    "section": "1H21",
+    "problem": 9
+  },
+  {
+    "unit": "H",
+    "section": "1H22",
+    "problem": 9
+  },
+  {
+    "unit": "H",
+    "section": "1H31",
+    "problem": 6
+  },
+  {
+    "unit": "H",
+    "section": "1H32",
+    "problem": 6
+  },
+  {
+    "unit": "H",
+    "section": "1H33",
+    "problem": 5
+  },
+  {
+    "unit": "H",
+    "section": "1H41",
+    "problem": 2
+  },
+  {
+    "unit": "H",
+    "section": "1H42",
+    "problem": 2
+  },
+  {
+    "unit": "H",
+    "section": "1H43",
+    "problem": 2
+  },
+  {
+    "unit": "H",
+    "section": "1H51",
+    "problem": 6
+  },
+  {
+    "unit": "H",
+    "section": "1H52",
+    "problem": 3
+  },
+  {
+    "unit": "E",
+    "section": "1E11",
+    "problem": 12
+  },
+  {
+    "unit": "E",
+    "section": "1E12",
+    "problem": 39
+  },
+  {
+    "unit": "E",
+    "section": "1E14",
+    "problem": 5
+  },
+  {
+    "unit": "E",
+    "section": "1E15",
+    "problem": 42
+  },
+  {
+    "unit": "E",
+    "section": "1E16",
+    "problem": 6
+  },
+  {
+    "unit": "E",
+    "section": "1E17",
+    "problem": 4
+  },
+  {
+    "unit": "E",
+    "section": "1E18",
+    "problem": 5
+  },
+  {
+    "unit": "E",
+    "section": "1E19",
+    "problem": 7
+  },
+  {
+    "unit": "E",
+    "section": "1E1A",
+    "problem": 8
+  },
+  {
+    "unit": "E",
+    "section": "1E21",
+    "problem": 12
+  },
+  {
+    "unit": "E",
+    "section": "1E22",
+    "problem": 10
+  },
+  {
+    "unit": "E",
+    "section": "1E23",
+    "problem": 8
+  },
+  {
+    "unit": "E",
+    "section": "1E31",
+    "problem": 7
+  },
+  {
+    "unit": "E",
+    "section": "1E32",
+    "problem": 7
+  },
+  {
+    "unit": "E",
+    "section": "1E33",
+    "problem": 8
+  },
+  {
+    "unit": "E",
+    "section": "1E34",
+    "problem": 7
+  },
+  {
+    "unit": "E",
+    "section": "1E35",
+    "problem": 6
+  },
+  {
+    "unit": "E",
+    "section": "1E36",
+    "problem": 6
+  },
+  {
+    "unit": "E",
+    "section": "1E37",
+    "problem": 8
+  },
+  {
+    "unit": "E",
+    "section": "1E41",
+    "problem": 5
+  },
+  {
+    "unit": "E",
+    "section": "1E42",
+    "problem": 2
+  },
+  {
+    "unit": "E",
+    "section": "1E43",
+    "problem": 5
+  },
+  {
+    "unit": "E",
+    "section": "1E44",
+    "problem": 3
+  },
+  {
+    "unit": "E",
+    "section": "1E45",
+    "problem": 3
+  },
+  {
+    "unit": "E",
+    "section": "1E46",
+    "problem": 4
+  },
+  {
+    "unit": "E",
+    "section": "1E51",
+    "problem": 6
+  },
+  {
+    "unit": "E",
+    "section": "1E52",
+    "problem": 5
+  }
+]

@@ -9,11 +9,11 @@ We found a [project](https://github.com/ranulldd/NEIE-Assistant) on github which
 git clone https://github.com/LiangYuxuan/NEIE-Assistant.git
 cd NEIE-Assistant
 
-# if you have activated your user
-python main.py -s example.com:1234 -u username -p password -l 4
+# if you have activated your user to learn RWT
+python main.py -s example.com:1234 -u username -p password -l 4 -t rwt
 
-# if you need to activate first
-python main.py -ac -s example.com:1234 -u username -p password -l 4
+# if you need to activate first to learn VLS
+python main.py -ac -s example.com:1234 -u username -p password -l 4 -t vls
 ```
 
 Change `example.com:1234` `username` `password` `4` to your real configs. For level, `1 2 3 4` are represented for `A B C D`.
@@ -22,8 +22,8 @@ For next run, you just need to run `python main.py`.
 
 ### Usage
 ```
-usage: main.py [-h] [-s PATH] [-u USERNAME] [-p PASSWORD] [-l LEVEL] [-ac]
-               [-nf] [--end-unit END_UNIT] [--min-time MIN_TIME]
+usage: main.py [-h] [-s PATH] [-u USERNAME] [-p PASSWORD] [-t TYPE] [-l LEVEL]
+               [-ac] [-nf] [--end-unit END_UNIT] [--min-time MIN_TIME]
                [--max-time MAX_TIME] [--min-mark MIN_MARK]
                [--max-mark MAX_MARK]
 
@@ -36,6 +36,7 @@ optional arguments:
                         username to login
   -p PASSWORD, --password PASSWORD
                         password to login
+  -t TYPE, --type TYPE  rwt or vls
   -l LEVEL, --level LEVEL
                         current level
   -ac, --activation     try to activate user first

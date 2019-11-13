@@ -1,0 +1,762 @@
+[
+  {
+    "unit": "1",
+    "section": "3121",
+    "problem": 0
+  },
+  {
+    "unit": "1",
+    "section": "3122",
+    "problem": 0
+  },
+  {
+    "unit": "1",
+    "section": "3123",
+    "problem": 10
+  },
+  {
+    "unit": "1",
+    "section": "3124",
+    "problem": 10
+  },
+  {
+    "unit": "1",
+    "section": "3125",
+    "problem": 5
+  },
+  {
+    "unit": "1",
+    "section": "3126",
+    "problem": 15
+  },
+  {
+    "unit": "1",
+    "section": "3127",
+    "problem": 0
+  },
+  {
+    "unit": "1",
+    "section": "3128",
+    "problem": 0
+  },
+  {
+    "unit": "1",
+    "section": "3129",
+    "problem": 0
+  },
+  {
+    "unit": "1",
+    "section": "312I",
+    "problem": 0
+  },
+  {
+    "unit": "1",
+    "section": "312A",
+    "problem": 1
+  },
+  {
+    "unit": "1",
+    "section": "312B",
+    "problem": 0
+  },
+  {
+    "unit": "1",
+    "section": "312J",
+    "problem": 0
+  },
+  {
+    "unit": "1",
+    "section": "312C",
+    "problem": 8
+  },
+  {
+    "unit": "1",
+    "section": "312D",
+    "problem": 8
+  },
+  {
+    "unit": "1",
+    "section": "312E",
+    "problem": 6
+  },
+  {
+    "unit": "1",
+    "section": "312F",
+    "problem": 9
+  },
+  {
+    "unit": "1",
+    "section": "312G",
+    "problem": 0
+  },
+  {
+    "unit": "1",
+    "section": "312H",
+    "problem": 0
+  },
+  {
+    "unit": "2",
+    "section": "3221",
+    "problem": 0
+  },
+  {
+    "unit": "2",
+    "section": "3226",
+    "problem": 0
+  },
+  {
+    "unit": "2",
+    "section": "3223",
+    "problem": 4
+  },
+  {
+    "unit": "2",
+    "section": "3224",
+    "problem": 10
+  },
+  {
+    "unit": "2",
+    "section": "3225",
+    "problem": 4
+  },
+  {
+    "unit": "2",
+    "section": "3227",
+    "problem": 0
+  },
+  {
+    "unit": "2",
+    "section": "3228",
+    "problem": 0
+  },
+  {
+    "unit": "2",
+    "section": "3229",
+    "problem": 0
+  },
+  {
+    "unit": "2",
+    "section": "322G",
+    "problem": 0
+  },
+  {
+    "unit": "2",
+    "section": "3222",
+    "problem": 0
+  },
+  {
+    "unit": "2",
+    "section": "322A",
+    "problem": 0
+  },
+  {
+    "unit": "2",
+    "section": "322H",
+    "problem": 0
+  },
+  {
+    "unit": "2",
+    "section": "322B",
+    "problem": 10
+  },
+  {
+    "unit": "2",
+    "section": "322I",
+    "problem": 5
+  },
+  {
+    "unit": "2",
+    "section": "322C",
+    "problem": 10
+  },
+  {
+    "unit": "2",
+    "section": "322E",
+    "problem": 0
+  },
+  {
+    "unit": "2",
+    "section": "322F",
+    "problem": 0
+  },
+  {
+    "unit": "3",
+    "section": "3321",
+    "problem": 0
+  },
+  {
+    "unit": "3",
+    "section": "3322",
+    "problem": 0
+  },
+  {
+    "unit": "3",
+    "section": "3323",
+    "problem": 9
+  },
+  {
+    "unit": "3",
+    "section": "3324",
+    "problem": 4
+  },
+  {
+    "unit": "3",
+    "section": "3325",
+    "problem": 0
+  },
+  {
+    "unit": "3",
+    "section": "3326",
+    "problem": 0
+  },
+  {
+    "unit": "3",
+    "section": "3327",
+    "problem": 0
+  },
+  {
+    "unit": "3",
+    "section": "332G",
+    "problem": 0
+  },
+  {
+    "unit": "3",
+    "section": "3328",
+    "problem": 0
+  },
+  {
+    "unit": "3",
+    "section": "3329",
+    "problem": 0
+  },
+  {
+    "unit": "3",
+    "section": "332H",
+    "problem": 0
+  },
+  {
+    "unit": "3",
+    "section": "332C",
+    "problem": 10
+  },
+  {
+    "unit": "3",
+    "section": "332A",
+    "problem": 5
+  },
+  {
+    "unit": "3",
+    "section": "332D",
+    "problem": 10
+  },
+  {
+    "unit": "3",
+    "section": "332E",
+    "problem": 0
+  },
+  {
+    "unit": "3",
+    "section": "332F",
+    "problem": 0
+  },
+  {
+    "unit": "4",
+    "section": "3421",
+    "problem": 0
+  },
+  {
+    "unit": "4",
+    "section": "3422",
+    "problem": 0
+  },
+  {
+    "unit": "4",
+    "section": "3423",
+    "problem": 10
+  },
+  {
+    "unit": "4",
+    "section": "3424",
+    "problem": 10
+  },
+  {
+    "unit": "4",
+    "section": "3425",
+    "problem": 5
+  },
+  {
+    "unit": "4",
+    "section": "3427",
+    "problem": 0
+  },
+  {
+    "unit": "4",
+    "section": "3428",
+    "problem": 0
+  },
+  {
+    "unit": "4",
+    "section": "3429",
+    "problem": 0
+  },
+  {
+    "unit": "4",
+    "section": "342I",
+    "problem": 0
+  },
+  {
+    "unit": "4",
+    "section": "342A",
+    "problem": 0
+  },
+  {
+    "unit": "4",
+    "section": "342B",
+    "problem": 0
+  },
+  {
+    "unit": "4",
+    "section": "342J",
+    "problem": 0
+  },
+  {
+    "unit": "4",
+    "section": "342C",
+    "problem": 8
+  },
+  {
+    "unit": "4",
+    "section": "342D",
+    "problem": 8
+  },
+  {
+    "unit": "4",
+    "section": "342E",
+    "problem": 6
+  },
+  {
+    "unit": "4",
+    "section": "342F",
+    "problem": 10
+  },
+  {
+    "unit": "4",
+    "section": "342G",
+    "problem": 0
+  },
+  {
+    "unit": "4",
+    "section": "342H",
+    "problem": 0
+  },
+  {
+    "unit": "5",
+    "section": "3521",
+    "problem": 0
+  },
+  {
+    "unit": "5",
+    "section": "3522",
+    "problem": 0
+  },
+  {
+    "unit": "5",
+    "section": "3523",
+    "problem": 10
+  },
+  {
+    "unit": "5",
+    "section": "3524",
+    "problem": 10
+  },
+  {
+    "unit": "5",
+    "section": "3525",
+    "problem": 5
+  },
+  {
+    "unit": "5",
+    "section": "3527",
+    "problem": 0
+  },
+  {
+    "unit": "5",
+    "section": "3528",
+    "problem": 0
+  },
+  {
+    "unit": "5",
+    "section": "3529",
+    "problem": 0
+  },
+  {
+    "unit": "5",
+    "section": "352I",
+    "problem": 0
+  },
+  {
+    "unit": "5",
+    "section": "352A",
+    "problem": 0
+  },
+  {
+    "unit": "5",
+    "section": "352B",
+    "problem": 0
+  },
+  {
+    "unit": "5",
+    "section": "352J",
+    "problem": 0
+  },
+  {
+    "unit": "5",
+    "section": "352C",
+    "problem": 8
+  },
+  {
+    "unit": "5",
+    "section": "352D",
+    "problem": 8
+  },
+  {
+    "unit": "5",
+    "section": "352E",
+    "problem": 6
+  },
+  {
+    "unit": "5",
+    "section": "352F",
+    "problem": 10
+  },
+  {
+    "unit": "5",
+    "section": "352G",
+    "problem": 0
+  },
+  {
+    "unit": "5",
+    "section": "352H",
+    "problem": 0
+  },
+  {
+    "unit": "6",
+    "section": "3621",
+    "problem": 0
+  },
+  {
+    "unit": "6",
+    "section": "3622",
+    "problem": 0
+  },
+  {
+    "unit": "6",
+    "section": "3623",
+    "problem": 12
+  },
+  {
+    "unit": "6",
+    "section": "3624",
+    "problem": 10
+  },
+  {
+    "unit": "6",
+    "section": "3625",
+    "problem": 10
+  },
+  {
+    "unit": "6",
+    "section": "3626",
+    "problem": 0
+  },
+  {
+    "unit": "6",
+    "section": "3627",
+    "problem": 0
+  },
+  {
+    "unit": "6",
+    "section": "3628",
+    "problem": 0
+  },
+  {
+    "unit": "6",
+    "section": "362H",
+    "problem": 0
+  },
+  {
+    "unit": "6",
+    "section": "3629",
+    "problem": 0
+  },
+  {
+    "unit": "6",
+    "section": "362A",
+    "problem": 0
+  },
+  {
+    "unit": "6",
+    "section": "362I",
+    "problem": 0
+  },
+  {
+    "unit": "6",
+    "section": "362B",
+    "problem": 8
+  },
+  {
+    "unit": "6",
+    "section": "362C",
+    "problem": 8
+  },
+  {
+    "unit": "6",
+    "section": "362D",
+    "problem": 6
+  },
+  {
+    "unit": "6",
+    "section": "362E",
+    "problem": 10
+  },
+  {
+    "unit": "6",
+    "section": "362F",
+    "problem": 0
+  },
+  {
+    "unit": "6",
+    "section": "362G",
+    "problem": 0
+  },
+  {
+    "unit": "7",
+    "section": "3721",
+    "problem": 0
+  },
+  {
+    "unit": "7",
+    "section": "3722",
+    "problem": 0
+  },
+  {
+    "unit": "7",
+    "section": "3723",
+    "problem": 10
+  },
+  {
+    "unit": "7",
+    "section": "3724",
+    "problem": 10
+  },
+  {
+    "unit": "7",
+    "section": "3727",
+    "problem": 0
+  },
+  {
+    "unit": "7",
+    "section": "3728",
+    "problem": 0
+  },
+  {
+    "unit": "7",
+    "section": "3729",
+    "problem": 0
+  },
+  {
+    "unit": "7",
+    "section": "372I",
+    "problem": 0
+  },
+  {
+    "unit": "7",
+    "section": "372A",
+    "problem": 0
+  },
+  {
+    "unit": "7",
+    "section": "372B",
+    "problem": 0
+  },
+  {
+    "unit": "7",
+    "section": "372J",
+    "problem": 0
+  },
+  {
+    "unit": "7",
+    "section": "372C",
+    "problem": 6
+  },
+  {
+    "unit": "7",
+    "section": "372D",
+    "problem": 8
+  },
+  {
+    "unit": "7",
+    "section": "372E",
+    "problem": 6
+  },
+  {
+    "unit": "7",
+    "section": "372F",
+    "problem": 10
+  },
+  {
+    "unit": "7",
+    "section": "372G",
+    "problem": 0
+  },
+  {
+    "unit": "7",
+    "section": "372H",
+    "problem": 0
+  },
+  {
+    "unit": "8",
+    "section": "3821",
+    "problem": 0
+  },
+  {
+    "unit": "8",
+    "section": "3822",
+    "problem": 0
+  },
+  {
+    "unit": "8",
+    "section": "3823",
+    "problem": 16
+  },
+  {
+    "unit": "8",
+    "section": "3824",
+    "problem": 10
+  },
+  {
+    "unit": "8",
+    "section": "3825",
+    "problem": 8
+  },
+  {
+    "unit": "8",
+    "section": "3826",
+    "problem": 10
+  },
+  {
+    "unit": "8",
+    "section": "3827",
+    "problem": 8
+  },
+  {
+    "unit": "8",
+    "section": "3828",
+    "problem": 0
+  },
+  {
+    "unit": "8",
+    "section": "3829",
+    "problem": 0
+  },
+  {
+    "unit": "8",
+    "section": "382A",
+    "problem": 0
+  },
+  {
+    "unit": "8",
+    "section": "382J",
+    "problem": 0
+  },
+  {
+    "unit": "8",
+    "section": "382B",
+    "problem": 0
+  },
+  {
+    "unit": "8",
+    "section": "382C",
+    "problem": 0
+  },
+  {
+    "unit": "8",
+    "section": "382K",
+    "problem": 0
+  },
+  {
+    "unit": "8",
+    "section": "382D",
+    "problem": 8
+  },
+  {
+    "unit": "8",
+    "section": "382E",
+    "problem": 8
+  },
+  {
+    "unit": "8",
+    "section": "382F",
+    "problem": 6
+  },
+  {
+    "unit": "8",
+    "section": "382G",
+    "problem": 10
+  },
+  {
+    "unit": "8",
+    "section": "382H",
+    "problem": 0
+  },
+  {
+    "unit": "8",
+    "section": "382I",
+    "problem": 0
+  },
+  {
+    "unit": "F",
+    "section": "3F21",
+    "problem": 5
+  },
+  {
+    "unit": "F",
+    "section": "3F22",
+    "problem": 5
+  },
+  {
+    "unit": "F",
+    "section": "3F23",
+    "problem": 5
+  },
+  {
+    "unit": "F",
+    "section": "3F24",
+    "problem": 5
+  },
+  {
+    "unit": "F",
+    "section": "3F25",
+    "problem": 30
+  },
+  {
+    "unit": "F",
+    "section": "3F26",
+    "problem": 20
+  },
+  {
+    "unit": "F",
+    "section": "3F27",
+    "problem": 0
+  },
+  {
+    "unit": "F",
+    "section": "3F28",
+    "problem": 0
+  },
+  {
+    "unit": "F",
+    "section": "3F29",
+    "problem": 0
+  }
+]

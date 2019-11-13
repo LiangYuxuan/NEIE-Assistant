@@ -1,34 +1,39 @@
+import json
+import os
+import time
 from ctypes import *
-import os, sys, time, json
+from sys import stdout
 
-sys.path.append(os.getcwd() + '/library')
-import termcolor
-
+from . import termcolor
 
 # Model Encode and Decode
 os.system('make -C library/C++/ > /dev/null')
+
 
 def encode(string):
     lib = cdll.LoadLibrary(os.getcwd() + '/library/C++/encode.so')
     lib.python.restype = c_char_p
     lib.python.argtypes = [c_char_p]
-    string = create_string_buffer(string)
-    return lib.python(string)
+    string = create_string_buffer(string.encode(encoding="GBK"))
+    return lib.python(string).decode(encoding="GBK")
+
 
 def decode(string):
     lib = cdll.LoadLibrary(os.getcwd() + '/library/C++/decode.so')
     lib.python.restype = c_char_p
     lib.python.argtypes = [c_char_p]
-    string = create_string_buffer(string)
-    return lib.python(string)
+    string = create_string_buffer(string.encode(encoding="GBK"))
+    return lib.python(string).decode(encoding="GBK")
 
 
 # Model Color Print
 def success(string):
     termcolor.cprint(string, 'green')
 
+
 def fail(string):
     termcolor.cprint(string, 'red')
+
 
 def warning(string):
     termcolor.cprint(string, 'yellow')
@@ -38,18 +43,17 @@ def warning(string):
 def timer(left):
     left = int(left)
     while left > 0:
-        print "time left: " + "%i " % left,
-        sys.stdout.flush()
+        stdout.write("time left: " + "%i " % left, )
+        stdout.flush()
         time.sleep(1)
-        print "\r\r",
+        stdout.write("\r\r", )
         left -= 1
 
 
 # Model Database
-def fetch(level, sectionID):
-    with open(os.getcwd() + '/database/lv' + level + '.json', 'r') as f:
-        obj = json.load(f)
-    arr = obj['level' + level]
+def fetch(type, level, sectionID):
+    with open(os.getcwd() + '/database/' + type + '/lv' + level + '.json', 'r') as f:
+        arr = json.load(f)
     flag = False
     result = {}
     for section in arr:
