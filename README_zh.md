@@ -33,14 +33,14 @@ A small, cross-platform program for NEIE.
 
 optional arguments:
   -h, --help            显示这个帮助内容并退出
-  -s PATH, --path PATH  服务器路径，包含ip地址和端口（一般情况下是80）
+  -s PATH, --path PATH  服务器路径，包含ip地址和端口（一般情况下是80）【必要选项】
   -u USERNAME, --username USERNAME
-                        登录用户名
+                        登录用户名【必要选项】
   -p PASSWORD, --password PASSWORD
-                        登录密码
-  -t TYPE, --type TYPE  rwt or vls
+                        登录密码【必要选项】
+  -t TYPE, --type TYPE  rwt为读写译，vls为视听说【必要选项】
   -l LEVEL, --level LEVEL
-                        需要刷的level
+                        需要刷的level【必要选项】
   -ac, --activation     先尝试激活用户
   -nf, --no-file        不使用也不保存 config.json 中记录的上次使用的配置
   --end-unit END_UNIT   设置停在哪个unit
