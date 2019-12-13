@@ -26,6 +26,7 @@
 from __future__ import print_function
 import os
 
+os.system("")# for windows color
 
 __ALL__ = [ 'colored', 'cprint' ]
 
