@@ -56,3 +56,5 @@ We are free to accept to any code. Everyone can fork it and pull request.
 We use open-source project including [requests](https://github.com/kennethreitz/requests) and [termcolor](https://pypi.python.org/pypi/termcolor).
 
 NEIE-Assistant is licensed under the GNU General Public License v3.0.
+
+[中文](README_zh.md)

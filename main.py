@@ -51,24 +51,39 @@ if args.no_file == False:
     with open(config_file, 'r+') as f:
         try:
             obj = json.load(f)
-        except:
+        except Exception as e:
+            print(e)
             obj = {}
 
+        if input("Use previous config?(Y/n)") not in ['N','n']: # lazy option
+            def sync(var, obj, names):
+                for name in names:
+                    try:
+                        obj[name]
+                    except:
+                        obj[name] = None
+                    if var[name] is None:
+                        var[name] = obj[name]
+                    elif var[name] != obj[name]:
+                        var[name] = obj[name]
 
-        def sync(var, obj, names):
-            for name in names:
-                try:
-                    obj[name]
-                except:
-                    obj[name] = None
-                if var[name] is None:
-                    var[name] = obj[name]
-                elif var[name] != obj[name]:
-                    obj[name] = var[name]
+            
+        else:
+            def sync(var, obj, names):
+                for name in names:
+                    try:
+                        obj[name]
+                    except:
+                        obj[name] = None
+                    if var[name] is None:
+                        var[name] = obj[name]
+                    elif var[name] != obj[name]:
+                        obj[name] = var[name]
 
 
         sync(var, obj, [name for name in var])
         f.seek(0)
+        f.truncate() # discard the previous config or the file might go wrong
         json.dump(obj, f)
 
 # check necessary arguments
